@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "presentation presentation presentation"
+    "resume contenu contenu"
+    "aboutme contenu contenu"
+    "skills skills skills";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    height: 100vh; 
+}
+    
+.presentation {
+    grid-area: presentation;
+    background-color: cyan;
+    padding: 20px;
+    text-align: center; 
+}
+
+.resume {
+    background-color: #66CC33;
+    grid-area: resume;
+    padding: 10px;
+}
+
+.about-me {
+    background-color: #CC99CC;
+    grid-area: aboutme;
+    padding: 10px;
+}
+
+.contenu {
+    background-image: url("https://i.pinimg.com/736x/be/78/05/be7805ef2512cd25bfcdec9e24ae8452.jpg");
+    grid-area: contenu;
+    background-color: beige;
+    width: 100%;
+}
+
+#Professional {
+    text-align: center;
+    color: beige;
+    text-decoration: underline;
+}
+
+.contact {
+    float: right;
+    background-color: red;
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+   text-align: center;
+}
+.pied-de-page {
+    grid-area: skills;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center; 
+}
